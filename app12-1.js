@@ -84,7 +84,7 @@ router.route('/process/logout').get(function(req, res) {
         req.session.destroy(function(err) {
             if(err){throw err;}
             console.log('세션을 삭제하고 로그아웃되었습니다.');
-            res.redirect('/index.html');
+            res.redirect('/login2.html');
         });
     } else {
         // 로그인 안된 상태
