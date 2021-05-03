@@ -161,7 +161,7 @@ router.route('/process/photo12').post(upload.array('photo12', 12), function(req,
                 size = files[index].size;
                 console.log('현재 파일 정보: ' + originalname + ', ' + filename + ', ' + mimetype + ', ' + size);
                 // 클라이언트에 응답 전송
-                res.write('<h3>' + (index + 1) + '번째 파일 업로드 성공</h3>');
+                res.write('<h3>이연지님' + (index + 1) + '번째 파일 업로드 성공</h3>');
                 res.write('<hr/>');
                 res.write('<p>원본 파일명: ' + originalname + '<br> -> 저장 파일명: ' + filename + '</p>');
                 res.write('<p>MIME TYPE: ' + mimetype + '</p>');
